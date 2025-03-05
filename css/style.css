@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #333;
+}
+.wrapper {
+  border: solid #fff 2px;
+}
+.bricks {
+  border: solid #fff 2px;
+  padding: 20px;
+}
+.square {
+  border: solid #fff 2px;
+  padding: 20px;
+}
+.places {
+  padding: 20px;
+}
+.grid {
+}

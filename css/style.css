@@ -5,21 +5,49 @@
 }
 
 .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #333;
 }
 .wrapper {
-  border: solid #fff 2px;
-}
-.bricks {
-  border: solid #fff 2px;
+  display: flex;
+  border: solid #ccc 2px;
   padding: 20px;
+  gap: 15px;
 }
+.bricks, 
+.places {
+  display: grid;
+  border: solid #fff 2px;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 5px;
+}
+.brick {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #eeafaf;
+  height: 150px;
+  width: 150px;
+}
+
 .square {
-  border: solid #fff 2px;
-  padding: 20px;
+  
+}
+.cell {
+  background-color: #fff;
+  height: 150px;
+  width: 150px;
 }
 .places {
-  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+.places-row {
+  
 }
 .grid {
+  height: 100%;
 }

@@ -18,33 +18,34 @@
   </head>
   <body class="body">
     <div class="wrapper">
-        <div class="bricks">
-            <div class="brick"></div>
-            <div class="brick"></div>
-            <div class="brick"></div>
+        <div class="bricks" draggable="false">
+            <div class="brick fifteen-kg" draggable="true">15</div>
+            <div class="brick" draggable="true"></div>
+            <div class="brick" draggable="true"></div>
         </div>
         <div class="places">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+            <div class="cell first-row">1</div>
+            <div class="cell first-row">2</div>
+            <div class="cell first-row"></div>
+            <div class="cell first-row"></div>
+            <div class="cell first-row"></div>
+            <div class="cell second-row">6</div>
+            <div class="cell second-row"></div>
+            <div class="cell second-row"></div>
+            <div class="cell second-row"></div>
+            <div class="cell second-row"></div>
+            <div class="cell third-row"></div>
+            <div class="cell third-row"></div>
+            <div class="cell third-row"></div>
+            <div class="cell third-row"></div>
+            <div class="cell third-row">15</div>
         </div>
-    </div>
+      </div>
+      <button class="check">Проверить</button>
 
     <script src="./js/hystmodal.min.js"></script>
     <script
-      src="./js/drag-drop-touch.esm.min.js"
+      src="./js/drag-drop-touch.esm.min.js?autoload"
       type="module"
     ></script>
     <script src="./js/main.js"></script>

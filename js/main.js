@@ -1,5 +1,10 @@
-const bricks = document.querySelectorAll(".brick__line");
+const bricks = document.querySelectorAll(".brick");
 const cells = document.querySelectorAll(".cell");
+
+const brickFifteenKg = document.querySelector("#fifteen-kg")
+const cellFirstRows = document.querySelectorAll(".first-row")
+
+const check = document.querySelector(".check")
 
 let dragItem = null;
 let isDragging = true;
@@ -13,6 +18,16 @@ cells.forEach((cell) => {
     cell.addEventListener("dragover", dragOver);
     cell.addEventListener("drop", dragDrop);
 });
+
+check.addEventListener("click", () => {
+  cellFirstRows.forEach((cellFirstRow) => {
+    if(cellFirstRow.classList.contains("fifteen-kg")){
+      console.log("Перевес")
+    } else {
+      console.log("Недовес")
+    }
+  })
+})
 
 function dragStart() {
   dragItem = this;
@@ -34,4 +49,3 @@ function dragOver(e) {
 function dragDrop() {
   this.append(dragItem);
 }
-

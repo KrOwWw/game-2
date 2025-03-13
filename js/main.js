@@ -1,7 +1,7 @@
 const bricks = document.querySelectorAll(".brick");
 const cells = document.querySelectorAll(".cell");
 
-const brickFifteenKg = document.querySelector("#fifteen-kg")
+const brickFifteenKg = document.querySelector(".fifteen-kg")
 const cellFirstRows = document.querySelectorAll(".first-row")
 
 const check = document.querySelector(".check")
@@ -21,7 +21,7 @@ cells.forEach((cell) => {
 
 check.addEventListener("click", () => {
   cellFirstRows.forEach((cellFirstRow) => {
-    if(cellFirstRow.classList.contains("fifteen-kg")){
+    if(cellFirstRow.contains(brickFifteenKg)){
       console.log("Перевес")
     } else {
       console.log("Недовес")
